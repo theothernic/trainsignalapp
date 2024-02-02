@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "bearlovescode/bluesky",
-            "version": "1.1.22",
+            "version": "1.1.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearlovescode/bluesky.git",
-                "reference": "4937b3dd15a108d53f2ce71f8da491b3aac779e6"
+                "reference": "9d99747d6ca21c50447b5f39794d525928572488"
             },
             "require": {
                 "bearlovescode/datamodels": "dev-main",
@@ -30,7 +30,7 @@
                     "email": "code@bearlovescode.com"
                 }
             ],
-            "time": "2024-02-02T00:07:03+00:00"
+            "time": "2024-02-02T08:55:52+00:00"
         },
         {
             "name": "bearlovescode/datamodels",
@@ -38,7 +38,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearlovescode/datamodels.git",
-                "reference": "08d90211ba231727ea7058fd2be5ed21715193c3"
+                "reference": "62464eef9f054097a60574e60a535bca7821a583"
             },
             "require": {
                 "php": "^8.1"
@@ -56,7 +56,7 @@
                     "email": "code@bearlovescode.com"
                 }
             ],
-            "time": "2024-02-01T21:31:56+00:00"
+            "time": "2024-02-02T09:19:32+00:00"
         },
         {
             "name": "bearlovescode/mastodon",

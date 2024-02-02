@@ -2,12 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Services\BlueskyService;
-use Bearlovescode\Bluesky\Services\RepoService;
-use Bearlovescode\Bluesky\Services\ServerService;
+
+use App\Jobs\Bluesky\PublishBlueskyMessage;
+use App\Models\AccountContent;
 use Illuminate\Console\Command;
 
-use Bearlovescode\Bluesky\Models\Service\Configuration as BlueskyConfiguration;
 
 class TestBlueskyService extends Command
 {
@@ -25,10 +24,7 @@ class TestBlueskyService extends Command
      */
     protected $description = 'Command description';
 
-    public function __construct(
-        private readonly ServerService $serverService,
-        private readonly RepoService $repoService
-    )
+    public function __construct()
     {
         parent::__construct();
     }
@@ -38,18 +34,9 @@ class TestBlueskyService extends Command
      */
     public function handle()
     {
-        // set up
-        $tempIdentifier = 'trainsignal.app';
-        $tempPassword = 'izgv-5tbl-oppv-pwxz';
 
-        // authenticate
-        $session = $this->serverService->createSession($tempIdentifier, $tempPassword);
+        $message = AccountContent::first();
 
-        $this->repoService->setSession($session);
-
-
-        // post a test message.
-
-        // cleanup.
+        PublishBlueskyMessage::dispatch($message);
     }
 }
