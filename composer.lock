@@ -4,18 +4,18 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29085aaa74544ab1ad68aac8b257c9dc",
+    "content-hash": "76bc47c1f47e69d2a2ecf7b0f2778efb",
     "packages": [
         {
             "name": "bearlovescode/bluesky",
-            "version": "1.1.10",
+            "version": "1.1.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearlovescode/bluesky.git",
-                "reference": "b40fb9d5c7cfbbce7b1662d9091003d64a13bc53"
+                "reference": "4937b3dd15a108d53f2ce71f8da491b3aac779e6"
             },
             "require": {
-                "bearlovescode/datamodels": "^1.1.0",
+                "bearlovescode/datamodels": "dev-main",
                 "guzzlehttp/guzzle": "^7.8"
             },
             "type": "library",
@@ -30,19 +30,20 @@
                     "email": "code@bearlovescode.com"
                 }
             ],
-            "time": "2024-02-01T16:57:42+00:00"
+            "time": "2024-02-02T00:07:03+00:00"
         },
         {
             "name": "bearlovescode/datamodels",
-            "version": "1.1.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearlovescode/datamodels.git",
-                "reference": "dd47a9bea8197e083bf36c282a598a0115504cab"
+                "reference": "08d90211ba231727ea7058fd2be5ed21715193c3"
             },
             "require": {
                 "php": "^8.1"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -55,7 +56,7 @@
                     "email": "code@bearlovescode.com"
                 }
             ],
-            "time": "2023-11-23T10:25:00+00:00"
+            "time": "2024-02-01T21:31:56+00:00"
         },
         {
             "name": "bearlovescode/mastodon",
@@ -63,10 +64,10 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearlovescode/mastodon.git",
-                "reference": "f8b1e5e0dade9259129bf9b2aee05da2e7c76ffb"
+                "reference": "f391da9a5045eb00a98a769905836d43f5daad53"
             },
             "require": {
-                "bearlovescode/datamodels": "^1.1.0",
+                "bearlovescode/datamodels": "dev-main",
                 "guzzlehttp/guzzle": "^7.8.0",
                 "league/uri": "7.3.0",
                 "league/uri-components": "7.3.0",
@@ -80,7 +81,7 @@
                     "Bearlovescode\\Mastodon\\": "src/"
                 }
             },
-            "time": "2023-12-10T06:21:27+00:00"
+            "time": "2024-02-01T20:39:57+00:00"
         },
         {
             "name": "brick/math",
@@ -8477,6 +8478,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "bearlovescode/datamodels": 20,
         "bearlovescode/mastodon": 20
     },
     "prefer-stable": true,

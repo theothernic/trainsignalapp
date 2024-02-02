@@ -24,7 +24,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "bearlovescode/datamodels": "^1.1.0",
+        "bearlovescode/datamodels": "dev-main",
         "bearlovescode/bluesky": "^1.1.10",
         "bearlovescode/mastodon": "dev-main"
     },
